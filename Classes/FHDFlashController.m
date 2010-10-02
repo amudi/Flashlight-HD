@@ -14,7 +14,7 @@
 - (id)init {
 	if ((self = [super init])) {
 #if !TARGET_IPHONE_SIMULATOR
-		if (![AVCaptureDevice instancesRespondToSelector:@selector(defaultDeviceWithMediaType:)]) {
+		if (![AVCaptureDevice instancesRespondToSelector:@selector(hasTorch)]) {
 			return nil;
 		}
 			  
@@ -40,8 +40,12 @@
 				[captureSession commitConfiguration];
 				[captureSession startRunning];
 			}
-
+		} else {
+			// no torch & flash
+			[captureSession release];
+			return nil;
 		}
+
 #endif
 	}
 	return self;
