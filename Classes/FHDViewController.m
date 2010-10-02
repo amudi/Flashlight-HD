@@ -28,8 +28,8 @@
 		flashController = [[FHDFlashController alloc] init];
 		if (flashController) {
 			toggleFlashButton = [[UIButton alloc] initWithFrame:CGRectZero];
-			[self.view addSubview:toggleFlashButton];
 			[toggleFlashButton addTarget:self action:@selector(toogleFlash) forControlEvents:UIControlEventTouchUpInside];
+			[self.view addSubview:toggleFlashButton];
 		}
 	}
 	return self;
@@ -44,8 +44,8 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	UIImage *buttonImage = [UIImage imageNamed:@"12-eye.png"];
-	[toggleFlashButton setFrame:CGRectMake((CGRectGetMaxX(self.view.bounds) - buttonImage.size.width) / 2, 10.0f, buttonImage.size.width, buttonImage.size.height)];
+	UIImage *buttonImage = [UIImage imageNamed:@"powerbutton.png"];
+	[toggleFlashButton setFrame:CGRectMake((CGRectGetMaxX(self.view.bounds) - (buttonImage.size.width / 2)) / 2, 10.0f, buttonImage.size.width / 2, buttonImage.size.height / 2)];
 	[toggleFlashButton setBackgroundColor:[UIColor clearColor]];
 	[toggleFlashButton setImage:buttonImage forState:UIControlStateNormal];
 }
@@ -110,6 +110,11 @@
 	if (flashController) {
 		isFlashOn = !isFlashOn;
 		[flashController toggle:isFlashOn];
+		if (isFlashOn) {
+			[toggleFlashButton setImage:[UIImage imageNamed:@"powerbutton-highlighted.png"] forState:UIControlStateNormal];
+		} else {
+			[toggleFlashButton setImage:[UIImage imageNamed:@"powerbutton.png"] forState:UIControlStateNormal];
+		}
 	}
 }
 

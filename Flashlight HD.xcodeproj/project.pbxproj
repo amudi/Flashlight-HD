@@ -20,7 +20,10 @@
 		D09AF4771256F5E4005287F0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF4741256F5E4005287F0 /* Icon.png */; };
 		D09AF47B1256F74A005287F0 /* FHDFlashController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09AF47A1256F74A005287F0 /* FHDFlashController.m */; };
 		D09AF47D1256F760005287F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09AF47C1256F760005287F0 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		D09AF4B41256FD71005287F0 /* 12-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF4B31256FD71005287F0 /* 12-eye.png */; };
+		D09AF50212571340005287F0 /* powerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF50012571340005287F0 /* powerbutton.png */; };
+		D09AF50312571340005287F0 /* powerbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF50112571340005287F0 /* powerbutton@2x.png */; };
+		D09AF52C1257154D005287F0 /* powerbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF52A1257154D005287F0 /* powerbutton-highlighted.png */; };
+		D09AF52D1257154D005287F0 /* powerbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D09AF52B1257154D005287F0 /* powerbutton-highlighted@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +47,10 @@
 		D09AF4791256F74A005287F0 /* FHDFlashController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHDFlashController.h; sourceTree = "<group>"; };
 		D09AF47A1256F74A005287F0 /* FHDFlashController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHDFlashController.m; sourceTree = "<group>"; };
 		D09AF47C1256F760005287F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		D09AF4B31256FD71005287F0 /* 12-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12-eye.png"; sourceTree = "<group>"; };
+		D09AF50012571340005287F0 /* powerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powerbutton.png; sourceTree = "<group>"; };
+		D09AF50112571340005287F0 /* powerbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbutton@2x.png"; sourceTree = "<group>"; };
+		D09AF52A1257154D005287F0 /* powerbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbutton-highlighted.png"; sourceTree = "<group>"; };
+		D09AF52B1257154D005287F0 /* powerbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powerbutton-highlighted@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +114,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D09AF4B31256FD71005287F0 /* 12-eye.png */,
+				D09AF52A1257154D005287F0 /* powerbutton-highlighted.png */,
+				D09AF52B1257154D005287F0 /* powerbutton-highlighted@2x.png */,
+				D09AF50012571340005287F0 /* powerbutton.png */,
+				D09AF50112571340005287F0 /* powerbutton@2x.png */,
 				D09AF4721256F5E4005287F0 /* Default.png */,
 				D09AF4731256F5E4005287F0 /* Icon_512.png */,
 				D09AF4741256F5E4005287F0 /* Icon.png */,
@@ -192,7 +201,10 @@
 				D09AF4751256F5E4005287F0 /* Default.png in Resources */,
 				D09AF4761256F5E4005287F0 /* Icon_512.png in Resources */,
 				D09AF4771256F5E4005287F0 /* Icon.png in Resources */,
-				D09AF4B41256FD71005287F0 /* 12-eye.png in Resources */,
+				D09AF50212571340005287F0 /* powerbutton.png in Resources */,
+				D09AF50312571340005287F0 /* powerbutton@2x.png in Resources */,
+				D09AF52C1257154D005287F0 /* powerbutton-highlighted.png in Resources */,
+				D09AF52D1257154D005287F0 /* powerbutton-highlighted@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
